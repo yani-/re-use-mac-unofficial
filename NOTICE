@@ -1,0 +1,32 @@
+RE-USE for Mac (unofficial)
+Copyright 2026 Yani Iliev
+
+This is an unofficial port. It is not affiliated with, sponsored by, or
+endorsed by NVIDIA. NVIDIA, Nemotron and NemotronLabs are trademarks of
+NVIDIA Corporation.
+
+The code in this repository is licensed under the Apache License 2.0
+(see LICENSE), except where noted below.
+
+This project includes material derived from the following works:
+
+1. mamba_ssm (https://github.com/state-spaces/mamba)
+   Copyright 2023 Tri Dao, Albert Gu
+   Licensed under the Apache License 2.0 (see LICENSE).
+   mamba_torch.py reimplements the Mamba layer from
+   mamba_ssm/modules/mamba_simple.py and selective_scan_ref from
+   mamba_ssm/ops/selective_scan_interface.py in pure PyTorch, with an added
+   Metal kernel. The changes are described in the header of mamba_torch.py.
+
+2. NVIDIA NemotronLabs RE-USE
+   (https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE)
+   Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+   Licensed under the OpenMDW License Agreement, version 1.1
+   (see LICENSES/OpenMDW-1.1.txt).
+   enhance.py adapts inference logic from inference.py and
+   inference_chunk.py of that repository. The changes are described in the
+   header of enhance.py.
+
+NVIDIA's model weights and model code are not included in this repository.
+enhance.py downloads them from Hugging Face at run time, and they remain
+governed by the OpenMDW License Agreement, version 1.1.

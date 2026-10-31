@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.mamba_ref/
+
+# audio inputs and outputs
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.ogg
+*.aif
+*.aiff

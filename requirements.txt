@@ -1,0 +1,7 @@
+torch>=2.7
+numpy
+soundfile
+einops
+pyyaml
+safetensors
+huggingface_hub
